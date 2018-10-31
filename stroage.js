@@ -1,3 +1,5 @@
+// CHECK local storage to see if there is any saved location data for the user.  IF not set the default location to Charlotte, NC.
+
 class Storage {
    constructor() {
       this.city
@@ -5,7 +7,7 @@ class Storage {
       this.defaultCity = 'Charlotte'
       this.defaultState = 'NC'
    }
-   getLocationData() {
+   async getLocationData() {
       if(localStorage.getItem('city') === null) {
          this.city = this.defaultCity
       } 
@@ -25,7 +27,7 @@ class Storage {
       }
    }
 
-   setLocationData(city, state) {
+   async setLocationData(city, state) {
       localStorage.setItem('city', city)
       localStorage.setItem('state', state)
    }

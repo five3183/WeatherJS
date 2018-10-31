@@ -1,39 +1,33 @@
-// INITILIZE STORAGE CLASS
 const storage = new Storage()
-
-const userLocation = storage.getLocationData()
-// INITILIZE weather object
+const keys = new Keys()
 const coords = new Location()
 const weather = new Weather()
 const ui = new UI()
 
 
-document.addEventListener('click', () => {
-  callWeather()
-  console.log('DOM fired')
-})
-
-const callWeather = () => {
-	coords.getCoords(userLocation.city, userLocation.state)
-		.then(res => {
-			console.log('coords fired')
-			console.log(res)
-        const coords = res[0].geometry.location
-        const zone =  res[0].formatted_address
-        weather.getWeather(coords.lat, coords.lng)
-          .then(results => {
-            console.log('weather fired')
-
-            console.log(results)
-            ui.paint(zone, results)
-            console.log('UI fired')
-
-          })
-          .catch(err => console.log(err))
-      // })
+// Once DOM conetent is loaded, getLocation => getKeys => getCoords => getWeather => paint UI
+const requestWeather = () => {
+  storage.getLocationData()
+    .then(location => {
+      keys.getKeys()
+        .then(keys => {
+          coords.getCoordinates(location.city, location.state, keys.key.gMap)
+            .then(locationData => {
+              const coords = locationData.results[0].geometry.location
+              const zone =  locationData.results[0].formatted_address
+              weather.getWeather(coords.lat, coords.lng, keys.key.weather)
+                .then(results => {
+                  ui.paint(zone, results)
+              })
+              .catch(err => console.log(err))
+            })
+            .catch(err => console.log(err))
+        })
     })
-    .catch(err => console.log(err))
 }
+
+
+document.addEventListener('DOMContentLoaded', requestWeather)
 
 // CHANGE LOCATION EVENT 
 document.getElementById('w-change-btn').addEventListener('click', () => {
@@ -41,21 +35,10 @@ document.getElementById('w-change-btn').addEventListener('click', () => {
   const state = document.getElementById('state').value 
 
   storage.setLocationData(city, state)
-
-  coords.getCoords(city, state)
-    .then(res => {
-      res.forEach(element => {
-        const coords = element.geometry.location
-        const zone =  element.formatted_address
-        weather.getWeather(coords.lat, coords.lng)
-          .then(results => {
-            console.log(results)
-            ui.paint(zone, results)
-          })
-          .catch(err => console.log(err))
-      })
+    .then( () => {
+      requestWeather()
     })
-    .catch(err => console.log(err))
- 
+  document.getElementById('w-form').reset()
   $('#location-modal').modal('hide')
+ 
 })

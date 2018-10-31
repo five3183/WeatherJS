@@ -1,6 +1,5 @@
+// THE heatIndex formula is taken from https://en.wikipedia.org/wiki/Heat_index
 
-
-// c.forEach((x, index )=> console.log(`${index + 1}: ${x}`))
 
 const heatIndex = (T, R) => {
    const c = [16.923, 0.185212, 5.37941, -0.100254, (9.41695 * Math.pow(10,-3)), (7.28898 * Math.pow(10,-3)), (3.45372 * Math.pow(10,-4)), (-8.14971 * Math.pow(10,-4)), (1.02102 * Math.pow(10,-5)), (-3.8646 * Math.pow(10, -5)), (2.91583 * Math.pow(10,-5)), (1.42721 * Math.pow(10,-6)), (1.97483 * Math.pow(10,-7)), (-2.18429 * Math.pow(10,-8)), (8.43296 * Math.pow(10,-10)), (-4.81975 * Math.pow(10,-11))]

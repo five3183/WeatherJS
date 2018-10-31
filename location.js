@@ -1,18 +1,15 @@
-const keys = new Keys
-
 class Location {
-   constructor() {
-      keys.getKeys()
-         .then(data => {
-            this.apiKey = data.key.gMap
-         })
-   }
-   async getCoords(city, state) {
+   async getCoordinates(city, state, key) {
       const response = await fetch(`
-      https://maps.googleapis.com/maps/api/geocode/json?address=${city},+${state}&key=${this.apiKey}`)
+      https://maps.googleapis.com/maps/api/geocode/json?address=${city},+${state}&key=${key}`)
       
       const responseCoords = await response.json()
 
-      return responseCoords.results
-   } 
+      return responseCoords
+   }
+// CHANGE LOCATION
+	changeLocation(city, state) {
+			this.city = city
+			this.state = state
+   }
 }
