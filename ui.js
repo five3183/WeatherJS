@@ -19,9 +19,10 @@ class UI {
       this.description.textContent = weather.weather[0].description.toUpperCase()
       this.icon.textContent = weather.weather[0].icon
       // *****
-      // TO DO Add a function to change weather display image
+      // TO DO get better weather images
       // *****
-      // this.icon.setAttribute('src', `https://media.giphy.com/media/cICPp2aw1sEashhIDn/giphy.gif`)
+      let weatherIcon = weather.weather[0].icon
+      this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weatherIcon}.png`)
       this.temp.textContent = temp + "°"
       this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}%`
       this.dewpoint.textContent = `Dew Point: ${dewPoint(temp, weather.main.humidity)}°`
