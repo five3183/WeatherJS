@@ -5,7 +5,7 @@ const weather = new Weather()
 const ui = new UI()
 
 
-// Once DOM conetent is loaded, getLocation => getKeys => getCoords => getWeather => paint UI
+// Once DOM conetent is loaded, getLocation (from local storage) => getKeys => getCoords => getWeather => paint UI
 const requestWeather = () => {
   storage.getLocationData()
     .then(location => {

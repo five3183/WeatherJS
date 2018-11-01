@@ -6,7 +6,6 @@ const heatIndex = (T, R) => {
 
    const HI = ((c[0]) + (c[1] * T) + (c[2] * R) + (c[3] * T * R)+(c[4] * Math.pow(T, 2)) + (c[5] * Math.pow(R,2)) + (c[6] * Math.pow(T, 2) * R) + (c[7] * T * Math.pow(R, 2)) + (c[8] * Math.pow(T, 2) * Math.pow(R, 2)) + (c[9] * Math.pow(T,3)) + (c[10] * Math.pow(R, 3)) + (c[11] * Math.pow(T, 3) * R) + (c[12] * T * Math.pow(R,3)) + (c[13] * Math.pow(T,3) * Math.pow(R,2)) + (c[14] * Math.pow(T,2) * Math.pow(R,3)) + (c[15] * Math.pow(T,3) * Math.pow(R,3)))
 
-   // console.log(HI)
    return HI.toFixed(0)
 }
 
