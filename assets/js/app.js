@@ -1,5 +1,4 @@
 const storage = new Storage()
-const keys = new Keys()
 const coords = new Location()
 const weather = new Weather()
 const ui = new UI()
