@@ -1,0 +1,126 @@
+/* Image 1 clear sky */
+.w-01d {
+   background-image: url('./weather-day.gif');
+   background-position: -8px -10px;
+   height: 180px;
+   width: 150px;
+}
+.w-01n {
+   background-image: url('./weather-day.gif');
+   background-position: -8px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* few clouds */
+.w-02d {
+   background-image: url('./weather-day.gif');
+   background-position: -170px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+.w-02n {
+   background-image: url('./weather-day.gif');
+   background-position: -170px -10px;
+   height: 180px;
+   width: 150px;
+}
+/* scatterd clouds */
+.w-03d {
+   background-image: url('./weather-day.gif');
+   background-position: -490px -10px;
+   height: 180px;
+   width: 150px;
+}
+.w-03n {
+   background-image: url('./weather-day.gif');
+   background-position: -490px -10px;
+   height: 180px;
+   width: 150px;
+}
+/* broken clouds */
+.w-04d {
+   background-image: url('./weather-day.gif');
+   background-position: -810px -10px;
+   height: 180px;
+   width: 150px;
+}
+.w-04n {
+   background-image: url('./weather-day.gif');
+   background-position: -810px -10px;
+   height: 180px;
+   width: 150px;
+}
+/* shower rain */
+.w-09d {
+   background-image: url('./weather-day.gif');
+   background-position: -650px -10px;
+   height: 180px;
+   width: 150px;
+}
+.w-09n {
+   background-image: url('./weather-day.gif');
+   background-position: -650px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* rain */
+.w-10d {
+   background-image: url('./weather-day.gif');
+   background-position: -322px -170px;
+   height: 180px;
+   width: 150px;
+}
+.w-10n {
+   background-image: url('./weather-day.gif');
+   background-position: -322px -170px;
+   height: 180px;
+   width: 150px;
+}
+/* thunderstorm */
+.w-11d {
+   background-image: url('./weather-day.gif');
+   background-position: -6px -350px;
+   height: 180px;
+   width: 150px;
+}
+
+.w-11n {
+   background-image: url('./weather-day.gif');
+   background-position: -6px -350px;
+   height: 180px;
+   width: 150px;
+}
+
+/* snow */
+.w-13d {
+   background-image: url('./weather-day.gif');
+   background-position: -640px -340px;
+   height: 180px;
+   width: 150px;
+}
+.w-13n {
+   background-image: url('./weather-day.gif');
+   background-position: -640px -340px;
+   height: 180px;
+   width: 150px;
+}
+/* mist */
+.w-50d {
+   background-image: url('./weather-day.gif');
+   background-position: -642px -170px;
+   height: 180px;
+   width: 150px;
+}
+.w-50n {
+   background-image: url('./weather-day.gif');
+   background-position: -642px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* #main-section {
+   background-color: rgb(8, 94, 121);
+} */

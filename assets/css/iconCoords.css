@@ -1,0 +1,160 @@
+/* Image 1 */
+.w-01d {
+   background-image: url('./weather-day.gif');
+   background-position: -8px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 2 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -170px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 3 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -330px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 4 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -490px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 5 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -650px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 6 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -810px -10px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 7 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -8px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 8 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -165px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 9 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -322px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 10 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -485px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 11 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -642px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 12 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -802px -170px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 13 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -6px -350px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 14 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -160px -345px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 15 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -320px -345px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 16 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -480px -340px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 17 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -640px -340px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Image 17 */
+#w-icon {
+   background-image: url('./weather-day.gif');
+   background-position: -800px -340px;
+   height: 180px;
+   width: 150px;
+}
+
+/* Night images start */
+/* Image 1 */
+#w-icon {
+   background-image: url('./weather-night.gif');
+   background-position: -70px 25px;
+   height: 175px;
+   width: 150px;
+}
+
+/* Image 2 */
+#w-icon {
+   background-image: url('./weather-night.gif');
+   background-position: -190px 39px;
+   height: 175px;
+   width: 150px;
+}
